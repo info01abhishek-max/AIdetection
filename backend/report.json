@@ -1,0 +1,124 @@
+{
+  "id": "175da971-902",
+  "timestamp": "2026-11-20T19:42:47.711084",
+  "image_info": {
+    "filename": "test.jpg",
+    "dimensions": {
+      "width": 512,
+      "height": 512
+    },
+    "format": "JPEG",
+    "size": 4725,
+    "has_exif": false
+  },
+  "overall_assessment": "POSSIBLE_MANIPULATION",
+  "ai_generated_probability": null,
+  "confidence": 50.0,
+  "detector_agreement": 0.5,
+  "detectors": [
+    {
+      "name": "Frequency Analysis",
+      "category": "POSSIBLE_MANIPULATION",
+      "confidence": 45.0,
+      "details": {
+        "high_frequency_ratio": 0.0,
+        "spectral_flatness": 15.968719277528612,
+        "jpeg_artifact_score": 0.0,
+        "indicators": [
+          "Unusually low high-frequency content",
+          "No EXIF metadata present"
+        ]
+      },
+      "processing_time": 180.6
+    },
+    {
+      "name": "Texture Analysis",
+      "category": "LIKELY_AI_GENERATED",
+      "confidence": 85.0,
+      "details": {
+        "lbp_entropy": 0.04572486061393347,
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "glcm_correlation": 1.0,
+        "noise_mean": 0.0,
+        "noise_std": 0.0,
+        "edge_density": 0.0,
+        "indicators": [
+          "Low texture complexity (LBP entropy)",
+          "Excessively uniform texture regions",
+          "Unnaturally consistent noise pattern",
+          "Unusually low edge density"
+        ]
+      },
+      "processing_time": 213.7
+    },
+    {
+      "name": "Metadata Inspection",
+      "category": "INCONCLUSIVE",
+      "confidence": 20.0,
+      "details": {
+        "has_exif": false,
+        "software": "",
+        "make": "",
+        "model": "",
+        "datetime_original": "",
+        "has_gps": false,
+        "indicators": [
+          "No EXIF metadata detected"
+        ]
+      },
+      "processing_time": 0.0
+    },
+    {
+      "name": "Consistency Check",
+      "category": "POSSIBLE_MANIPULATION",
+      "confidence": 50.0,
+      "details": {
+        "mean_coefficient_variation": 0.0,
+        "std_coefficient_variation": 0.0,
+        "color_consistency_score": 0.0,
+        "compression_consistency": 0.0,
+        "indicators": [
+          "Suspiciously uniform illumination across quadrants",
+          "Low texture variation across image regions",
+          "Unnatural color distribution consistency"
+        ]
+      },
+      "processing_time": 358.9
+    }
+  ],
+  "evidence": {
+    "synthetic_indicators": [
+      "Unnaturally consistent noise pattern",
+      "Excessively uniform texture regions",
+      "Unusually low edge density",
+      "Low texture complexity (LBP entropy)"
+    ],
+    "manipulation_indicators": [
+      "Unusually low high-frequency content",
+      "Low texture variation across image regions",
+      "No EXIF metadata present",
+      "Suspiciously uniform illumination across quadrants",
+      "Unnatural color distribution consistency"
+    ],
+    "authenticity_indicators": [],
+    "limitations": [
+      "High-quality manipulations may evade detection",
+      "Detection accuracy varies by AI model and generation method",
+      "Camera-originated images may be misclassified if heavily processed",
+      "Metadata can be stripped or forged",
+      "Results are probabilistic estimates, not definitive proof"
+    ]
+  },
+  "technical_details": {
+    "processing_time": 775.5,
+    "models_used": [
+      "Frequency Analysis",
+      "Texture Analysis",
+      "Metadata Inspection",
+      "Consistency Check"
+    ],
+    "image_hash": "550fe7e38ffd0821"
+  }
+}
